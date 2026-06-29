@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daniel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- LOCKSCREEN -->
+<!-- ================================================= -->
+
+<section class="screen active" id="lockscreen">
+
+    <div class="lock-container">
+
+        <div id="time">22:15</div>
+        <div id="date">quarta-feira, 1 de julho</div>
+
+        <p class="pin-text">Digite o Código</p>
+
+        <div id="pinDots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="keypad">
+
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+
+            <div></div>
+
+            <button class="num">0</button>
+
+            <button id="delete">⌫</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- HOME -->
+<!-- ================================================= -->
+
+<section class="screen" id="home">
+
+    <div class="phone">
+    <img class="wallpaper" src="background.png">
+
+
+    <div class="status-bar">
+
+        <span id="homeTime">22:15</span>
+
+    </div>
+
+    <div class="apps">
+
+        <button class="app" data-target="birthday">
+
+            <img src="Birthday.png">
+
+            <span>Birthday</span>
+
+        </button>
+
+        <button class="app" data-target="gameScreen">
+
+            <img src="CatchBible.png">
+
+            <span>CatchBible</span>
+
+        </button>
+
+        <button class="app" data-target="ourSpace">
+
+            <img src="OurSpace.png">
+
+            <span>Our Space</span>
+
+        </button>
+
+        <button class="app" data-target="letter">
+
+            <img src="Letter.png">
+
+            <span>Letter</span>
+
+        </button>
+
+        <button class="app" data-target="wish">
+
+            <img src="MakeAWish.png">
+
+            <span>Make A Wish</span>
+
+        </button>
+
+    </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- BIRTHDAY -->
+<!-- ================================================= -->
+
+<section class="screen" id="birthday">
+
+    <canvas id="fireworks"></canvas>
+
+    <img src="hb.png" class="hb-heart">
+
+     <button class="backHome">❮</button>
+
+</section>
+
+
+<section class="screen" id="gameScreen">
+
+    <div id="hud">
+
+        ✝️ <span id="crossScore">0</span>
+
+        &nbsp;&nbsp;&nbsp;
+
+        📖 <span id="bibleScore">0</span>/3
+
+    </div>
+
+    <audio id="musica1" src="musica1.mp3" preload="auto"></audio>
+
+    <div id="gameArea"></div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- OUR SPACE -->
+<!-- ================================================= -->
+
+<section class="screen" id="ourSpace">
+
+    <div class="our-space-content">
+
+        <div class="slideshow">
+
+            <img id="slideImage" src="foto1.jpg">
+
+        </div>
+
+        <div class="music-info">
+
+            <h2 id="songTitle">
+                Música
+            </h2>
+
+            <p id="translation">
+
+                Tradução da música aparecerá aqui.
+
+            </p>
+
+        </div>
+
+    </div>
+
+     <button class="backHome">❮</button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- LETTER -->
+<!-- ================================================= -->
+
+<section class="screen" id="letter">
+
+    <div class="letter-box">
+
+        SUA CARTA AQUI ❤️
+
+    </div>
+
+     <button class="backHome">❮</button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- MAKE A WISH -->
+<!-- ================================================= -->
+
+<section class="screen" id="wish">
+
+    <div class="wish-content">
+
+        <h1>✨ Make A Wish ✨</h1>
+
+        <p>
+
+            Em breve...
+
+        </p>
+
+    </div>
+
+     <button class="backHome">❮</button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- SCRIPTS -->
+<!-- ================================================= -->
+
+<script src="script.js"></script>
+<script src="game.js"></script>
+<script src="JesusScreen.js"></script>
+
+</body>
+</html>
